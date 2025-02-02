@@ -1,0 +1,107 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceSlow {
+    0%, 100% { transform: translateY(-10px); }
+    50% { transform: translateY(0); }
+}
+
+@keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes rotateProfile {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-20px);}
+  60% {transform: translateY(-10px);}
+}
+
+.profile-image {
+    transition: transform 0.8s ease-in-out;
+}
+
+.profile-image:hover {
+    animation: rotateProfile 1s ease-in-out;
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+.animate-slide-up {
+    animation: slideUp 1s ease-out;
+}
+
+.animate-bounce-slow {
+    animation: bounceSlow 3s infinite ease-in-out;
+}
+
+.typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter 2s steps(40, end);
+}
+
+.animate-bounce-in {
+  animation: bounce 1s;
+}
+
+.platform-card {
+    transition: all 0.3s ease;
+    background-color: #1a1a1a;
+}
+
+.platform-card:hover {
+    transform: scale(1.02);
+    background-color: #2a2a2a;
+    box-shadow: 0 4px 12px rgba(255, 209, 220, 0.1);
+}
+
+.section-card {
+    transition: transform 0.3s ease;
+    animation: slideUp 1s ease-out;
+    background-color: #1a1a1a;
+}
+
+.section-card:hover {
+    transform: scale(1.02);
+}
+
+.pastel-pink {
+    color: #ffd1dc;
+}
+
+.border-pastel-pink {
+    border-color: #ffd1dc;
+}
+
+.btn-certificate {
+    background-color: #1a1a1a;
+    border: 2px solid #ffd1dc;
+    transition: all 0.3s ease;
+}
+
+.btn-certificate:hover {
+    background-color: #ffd1dc;
+    color: #1a1a1a;
+    transform: translateY(-2px);
+}
